@@ -1,0 +1,7 @@
+node_modules
+dist
+.venv
+Copy.pdf
+extracted_pdf_images
+pdf_photos_by_page
+*.log
