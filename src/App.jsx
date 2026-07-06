@@ -24,7 +24,6 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import brandLogo from '../img/e6b15b41-d22e-4164-8d86-2fd8eb7ed54a.jpg';
 
 const pages = [
   { id: 'home', label: 'Home' },
@@ -444,11 +443,9 @@ function App() {
           <button
             type="button"
             onClick={() => navTo('home')}
-            className="group flex items-center gap-3 text-left"
+            className="group flex items-center text-left"
           >
-            <div className="flex h-12 w-[168px] items-center justify-center rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-corporate sm:h-14 sm:w-[184px]">
-              <img src={brandLogo} alt="LR Builders Corporation" className="h-full w-full object-contain" />
-            </div>
+            <img src="/brand-logo.png" alt="LR Builders Corporation" className="block h-11 w-auto object-contain sm:h-12 lg:h-14" />
             <span className="sr-only">LR Builders Corporation</span>
           </button>
 
@@ -987,9 +984,7 @@ function App() {
       <footer className="border-t border-slate-200 bg-slate-900 text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
           <div>
-            <div className="inline-flex items-center rounded-2xl border border-white/10 bg-white px-4 py-3 shadow-lg shadow-black/10">
-              <img src={brandLogo} alt="LR Builders Corporation" className="h-10 w-[170px] object-contain sm:h-12 sm:w-[190px]" />
-            </div>
+            <img src="/brand-logo.png" alt="LR Builders Corporation" className="block h-10 w-auto object-contain sm:h-12 lg:h-14" />
             <div className="mt-4">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">Industrial Corporate Construction Partner</p>
               <p className="mt-3 max-w-xl leading-7 text-slate-300">
