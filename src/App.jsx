@@ -24,6 +24,7 @@ import {
   Users,
   X,
 } from 'lucide-react';
+import brandLogo from '../img/e6b15b41-d22e-4164-8d86-2fd8eb7ed54a.jpg';
 
 const pages = [
   { id: 'home', label: 'Home' },
@@ -445,15 +446,10 @@ function App() {
             onClick={() => navTo('home')}
             className="group flex items-center gap-3 text-left"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-amber-500 shadow-corporate">
-              <Building2 className="h-6 w-6" />
+            <div className="flex h-12 w-[168px] items-center justify-center rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-corporate sm:h-14 sm:w-[184px]">
+              <img src={brandLogo} alt="LR Builders Corporation" className="h-full w-full object-contain" />
             </div>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-500">Industrial Corporate</p>
-              <h1 className="text-lg font-extrabold tracking-tight text-slate-900 sm:text-xl">
-                LR BUILDERS CORPORATION
-              </h1>
-            </div>
+            <span className="sr-only">LR Builders Corporation</span>
           </button>
 
           <div className="ml-auto flex items-center gap-2">
@@ -991,18 +987,15 @@ function App() {
       <footer className="border-t border-slate-200 bg-slate-900 text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
           <div>
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-500 text-slate-950">
-                <Building2 className="h-6 w-6" />
-              </div>
-              <div>
-                <h2 className="text-xl font-black">LR Builders Corporation</h2>
-                <p className="text-sm text-slate-400">Industrial Corporate Construction Partner</p>
-              </div>
+            <div className="inline-flex items-center rounded-2xl border border-white/10 bg-white px-4 py-3 shadow-lg shadow-black/10">
+              <img src={brandLogo} alt="LR Builders Corporation" className="h-10 w-[170px] object-contain sm:h-12 sm:w-[190px]" />
             </div>
-            <p className="mt-4 max-w-xl leading-7 text-slate-300">
-              Shaping sustainable and durable infrastructure nationwide through disciplined construction, engineering, and design-build delivery.
-            </p>
+            <div className="mt-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">Industrial Corporate Construction Partner</p>
+              <p className="mt-3 max-w-xl leading-7 text-slate-300">
+                Shaping sustainable and durable infrastructure nationwide through disciplined construction, engineering, and design-build delivery.
+              </p>
+            </div>
           </div>
 
           <div>
