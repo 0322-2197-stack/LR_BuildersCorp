@@ -984,7 +984,13 @@ function App() {
       <footer className="border-t border-slate-200 bg-slate-900 text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
           <div>
-            <img src="/brand-logo.png" alt="LR Builders Corporation" className="block h-10 w-auto object-contain sm:h-12 lg:h-14" />
+            <div className="inline-flex items-center rounded-3xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.2)] backdrop-blur-sm">
+              <img
+                src="/brand-logo-footer.png"
+                alt="LR Builders Corporation"
+                className="block h-12 w-auto object-contain sm:h-14 lg:h-16"
+              />
+            </div>
             <div className="mt-4">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-400">Industrial Corporate Construction Partner</p>
               <p className="mt-3 max-w-xl leading-7 text-slate-300">
